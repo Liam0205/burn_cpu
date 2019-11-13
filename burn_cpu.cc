@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
       v.emplace_back([]() { for(;;); });
       std::cout << "Thread (" << i << ") spawned!" << std::endl;
     }
-    std::cout << "Now, check temprature of your CPU!" << std::endl;
+    std::cout << "Now, check temperature of your CPU!" << std::endl;
     for (auto& t : v) {
       t.join();
     }
